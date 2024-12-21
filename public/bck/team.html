@@ -1,0 +1,438 @@
+
+
+<!doctype html>
+<html>
+   
+<!-- Mirrored from sbtechnosoft.com/guidepro/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:39:20 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>About - Guidepro </title>
+      <!-- Plugins CSS -->
+      <link href="css/plugins.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
+      <!-- Pre Loader -->
+      <div id="dvLoading"></div>
+      <header class="custom-navbar-" id="navigation">
+         <div class="container">
+            <div class="row px-3">
+               <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                  <!-- Header Logo -->
+                  <div class="header-logo">
+                     <a href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                  </div>
+                  <!-- Header Logo end -->
+               </div>
+               <div class="d-flex position-static menu-sec">
+                  <!-- main menu area -->
+                  <nav class="main-menu-area ml-auto mobile-menu-active">
+                     <ul class="main-menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Pages</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="about-us.html" class="nav-link">About</a></li>
+                              <li><a href="team.html" class="nav-link">Our Team</a></li>
+                              <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                              <li><a href="404.html" class="nav-link">404</a></li>
+                              <li><a href="#sign-in-popup" class="nav-link open-popup-link">Login</a></li>
+                              <li><a href="search-results.html" class="nav-link">Search Results</a></li>
+                           </ul>
+                        </li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Jobs</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="job-list.html" class="nav-link">Job List</a></li>
+                              <li><a href="job-details.html" class="nav-link">Job Details</a></li>
+                           </ul>
+                        </li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Blog</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="blog.html" class="nav-link">Blog Grid</a></li>
+                              <li><a href="single-blog.html" class="nav-link">Blog Details</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                     </ul>
+                  </nav>
+                  <div class="login-sec">
+                     <a class="btn open-popup-link" href="#sign-in-popup">Login / Sign Up</a>
+                  </div>
+                  <!-- main menu area end -->
+                  <!-- Mobile Menu Container -->
+                  <div class="mobile-menu-container"><span class="sr-only">Mobile Menu Will Come Here.</span></div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- End Navbar -->
+      <!-- Sign In/Up Section -->
+      <div class="sign-in-up-part mfp-hide" id="sign-in-popup">
+         <div class="container">
+            <div class="section-title"> <span class="section-span">Sign In Here</span>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <form class="quote-form contact__form-panel">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="name" id="username" class="form-control"
+                              placeholder="Username / Email" required>
+                        </div>
+                        <div class="col-md 12">
+                           <input type="text" name="email" id="email" class="form-control" placeholder="Password"
+                              required>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center">
+                        <a class="btn- open-popup-link" href="#register-popup">Sign Up</a>
+                        <button type="submit" id="login-btn" class="btn ml-auto">Log In</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="sign-in-up-part mfp-hide" id="register-popup">
+         <div class="container">
+            <div class="section-title"> <span class="section-span">Register Here</span>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <form class="quote-form contact__form-panel">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="name" id="name1" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md 12">
+                           <input type="text" name="email" id="email1" class="form-control" placeholder="Email"
+                              required>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="phone" id="phone1" class="form-control"
+                              placeholder="Phone Number*" onkeypress="return isNumberKey(event)">
+                           <script>
+                              function isNumberKey(evt) {
+                              	var charCode = (evt.which) ? evt.which : event.keyCode
+                              	if (charCode > 31 && (charCode < 48 || charCode > 57))
+                              		return false;
+                              	return true;
+                              }
+                           </script>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center">
+                        <a class="btn- open-popup-link" href="#sign-in-popup">Sign In</a>
+                        <button type="submit" id="register-btn" class="btn ml-auto">Register</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Start breadcrumbs Section -->
+      <section class="breadcrumbs-sec">
+         <img src="images/about/about-banner.jpg" class="w-100 banner-img" alt="">
+         <div class="breadcrumbs-text">
+            <h2>About US</h2>
+            <ul>
+               <li><a href="index.html">Home</a> </li>
+               <li>About Us </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End Breadcrumbs Section -->
+      <!-- Start Inner Content Wrapper -->
+      <section class="inner-content-wrapper team-sec">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-lg-3">
+                  <!-- Single Team Section -->
+                  <div class="single-team-sec">
+                     <div class="single-staff">
+                        <div class="staff-inner">
+                           <div class="thumb">
+                              <img src="images/our-team1.jpg" alt="">
+                              <div class="staff-social-links">
+                                 <ul>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="staff-content">
+                              <h3 class="name"><a href="javascript:void(0)">David Williams</a></h3>
+                              <div class="speciality">Our Staff</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <!-- Single Team Section -->
+                  <div class="single-team-sec">
+                     <div class="single-staff">
+                        <div class="staff-inner">
+                           <div class="thumb">
+                              <img src="images/our-team2.jpg" alt="">
+                              <div class="staff-social-links">
+                                 <ul>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="staff-content">
+                              <h3 class="name"><a href="javascript:void(0)">Les Williams</a></h3>
+                              <div class="speciality">Our Staff</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <!-- Single Team Section -->
+                  <div class="single-team-sec">
+                     <div class="single-staff">
+                        <div class="staff-inner">
+                           <div class="thumb">
+                              <img src="images/our-team3.jpg" alt="">
+                              <div class="staff-social-links">
+                                 <ul>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="staff-content">
+                              <h3 class="name"><a href="javascript:void(0)">John Doe</a></h3>
+                              <div class="speciality">Our Staff</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3">
+                  <!-- Single Team Section -->
+                  <div class="single-team-sec">
+                     <div class="single-staff">
+                        <div class="staff-inner">
+                           <div class="thumb">
+                              <img src="images/our-team4.jpg" alt="">
+                              <div class="staff-social-links">
+                                 <ul>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="staff-content">
+                              <h3 class="name"><a href="javascript:void(0)">Alex Turner</a></h3>
+                              <div class="speciality">Our Staff</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Start Count Section -->
+      <section class="count-sec" id="count">
+         <div class="container-fluid">
+            <div class="row content-block">
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon1.png" alt="">
+                  <h4><i class="countdwon-number">150</i><span>Faculties</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon2.png" alt="">
+                  <h4><i class="countdwon-number">2300</i><span>Students</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-0 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon3.png" alt="">
+                  <h4><i class="countdwon-number">40</i><span>Courses</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-0 mb-md-0 mb-lg-0">
+                  <img src="images/count/count-icon4.png" alt="">
+                  <h4><i class="countdwon-number">80</i><span>Countries</span></h4>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Count Section -->
+      <!-- Start Testimonial Section -->
+      <section id="testimonials" class="testimonial-sec">
+         <div class="container">
+            <h3 class="section-title text-center">Happy Candidates <br> <img src="images/title-border.png" alt=""></h3>
+            <div class="row mt-md-4">
+               <div id="testimonialcarousel" class="carousel slide testimonial-carousel text-center w-100"
+                  data-ride="carousel" data-interval="2500">
+                  <i class="quote-icon left-quote"><img src="images/quote.png" alt=""></i>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="testimonial">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dapibus tortor.
+                              Suspendisse orci ante, vestibulum at libero ac, vulputate vulputate sem. Cras quis
+                              lorem condimentum, ornare mi molestie, ipsum.
+                           </p>
+                           <!--Avatar-->
+                           <div class="avatar mx-auto mb-4">
+                              <img src="images/testimonials/testimonial-img1.png" class="rounded-circle img-fluid"
+                                 alt="">
+                           </div>
+                           <h4>Josi Welleam</h4>
+                           <h6>Founder, GitGat</h6>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonial">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dapibus tortor.
+                              Suspendisse orci ante, vestibulum at libero ac, vulputate vulputate sem. Cras quis
+                              lorem condimentum, ornare mi molestie, ipsum..
+                           </p>
+                           <!--Avatar-->
+                           <div class="avatar mx-auto mb-4">
+                              <img src="images/testimonials/testimonial-img2.png" class="rounded-circle img-fluid"
+                                 alt="">
+                           </div>
+                           <h4>Jenny Jo</h4>
+                           <h6>Co Founder, GitGat</h6>
+                        </div>
+                     </div>
+                  </div>
+                  <i class="quote-icon right-quote"><img src="images/quote.png" alt=""></i>
+                  <a class="carousel-control-prev" href="#testimonialcarousel" role="button" data-slide="prev">
+                  <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#testimonialcarousel" role="button" data-slide="next">
+                  <i class="fas fa-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Testimonial Section -->
+      <!-- Start Footer Section -->
+      <footer class="footer-sec ">
+         <div class="container">
+            <div class="row d-flex content-block ">
+               <div class="footer-logo">
+                  <a class="nav-link " href="#home"><img src="images/footer-logo.png" alt=""></a>
+               </div>
+               <div class="ml-auto col-6 right-sec ">
+                  <div class="input-group subscribe-group">
+                     <input type="email" class="form-control" placeholder="Your Enter email" aria-label=""
+                        aria-describedby="basic-addon2">
+                     <div class="input-group-append"> <span class="input-group-text subscribe-btn" id="basic-addon2">
+                        Subscribe</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-info  d-flex  ">
+               <div class="col-md-4 col-sm-12">
+                  <h3>Need Help?</h3>
+                  <p class="phone"><i class="fas fa-phone-alt mr-2"></i> Call Us : <span>1800-0000-1234</span></p>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <h3>Email:</h3>
+                  <p><i class="fas fa-paper-plane mr-2"></i> info@test.com / support@test.com</p>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <!--social-->
+                  <div class="ml-auto social-media">
+                     <h3>Follow Us</h3>
+                     <ul class="menu-social">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-youtube"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer Section -->
+      <!-- Start Copyright Section -->
+      <div class="copyright-sec">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center content-block d-flex">
+                  <div class="text">
+                     <p>© Copyright <span id="year"></span> JobPool. All Rights Reserved</p>
+                  </div>
+                  <div class="footer-menu">
+                     <ul>
+                        <li> <a href="home.html">Home</a>
+                        </li>
+                        <li> <a href="About-us-2.html">About Us</a>
+                        </li>
+                        <li> <a href="services.html">Services</a>
+                        </li>
+                        <li> <a href="current-jobs.html">Current Jobs</a>
+                        </li>
+                        <li> <a href="plans.html">Our Plans</a>
+                        </li>
+                        <li> <a href="blog.html">Blog</a>
+                        </li>
+                        <li> <a href="contact.html">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Copyright Section -->
+      <!--jquery js -->
+      <script src="js/jquery-min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <!--jquery js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!--Easing js -->
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- CounterUp JS -->
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- MagnificPopup JS -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!--jquery js -->
+      <script src="js/plugins.js"></script>
+      <!--Fontawesome js -->
+      <script src="js/fontawesome.js"></script>
+      <!--jquery js -->
+      <script src="js/custom.js"></script>
+   </body>
+
+<!-- Mirrored from sbtechnosoft.com/guidepro/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:39:26 GMT -->
+</html>
+

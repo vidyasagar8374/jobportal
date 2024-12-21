@@ -1,0 +1,515 @@
+
+
+<!doctype html>
+<html>
+   
+<!-- Mirrored from sbtechnosoft.com/guidepro/single-blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:39:27 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>About - Guidepro </title>
+      <!-- Plugins CSS -->
+      <link href="css/plugins.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+   </head>
+   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
+      <!-- Pre Loader -->
+      <div id="dvLoading"></div>
+      <header class="custom-navbar-" id="navigation">
+         <div class="container">
+            <div class="row px-3">
+               <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                  <!-- Header Logo -->
+                  <div class="header-logo">
+                     <a href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                  </div>
+                  <!-- Header Logo end -->
+               </div>
+               <div class="d-flex position-static menu-sec">
+                  <!-- main menu area -->
+                  <nav class="main-menu-area ml-auto mobile-menu-active">
+                     <ul class="main-menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Pages</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="about-us.html" class="nav-link">About</a></li>
+                              <li><a href="team.html" class="nav-link">Our Team</a></li>
+                              <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                              <li><a href="404.html" class="nav-link">404</a></li>
+                              <li><a href="#sign-in-popup" class="nav-link open-popup-link">Login</a></li>
+                              <li><a href="search-results.html" class="nav-link">Search Results</a></li>
+                           </ul>
+                        </li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Jobs</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="job-list.html" class="nav-link">Job List</a></li>
+                              <li><a href="job-details.html" class="nav-link">Job Details</a></li>
+                           </ul>
+                        </li>
+                        <li class="sub-menu-wrap">
+                           <a href="javascript:void(0)">Blog</a>
+                           <!-- Sub Menu -->
+                           <ul class="sub-menu">
+                              <li><a href="blog.html" class="nav-link">Blog Grid</a></li>
+                              <li><a href="single-blog.html" class="nav-link">Blog Details</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                     </ul>
+                  </nav>
+                  <div class="login-sec">
+                     <a class="btn open-popup-link" href="#sign-in-popup">Login / Sign Up</a>
+                  </div>
+                  <!-- main menu area end -->
+                  <!-- Mobile Menu Container -->
+                  <div class="mobile-menu-container"><span class="sr-only">Mobile Menu Will Come Here.</span></div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- End Navbar -->
+      <!-- Sign In/Up Section -->
+      <div class="sign-in-up-part mfp-hide" id="sign-in-popup">
+         <div class="container">
+            <div class="section-title"> <span class="section-span">Sign In Here</span>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <form class="quote-form contact__form-panel">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="name" id="username" class="form-control"
+                              placeholder="Username / Email" required>
+                        </div>
+                        <div class="col-md 12">
+                           <input type="text" name="email" id="email" class="form-control" placeholder="Password"
+                              required>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center">
+                        <a class="btn- open-popup-link" href="#register-popup">Sign Up</a>
+                        <button type="submit" id="login-btn" class="btn ml-auto">Log In</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="sign-in-up-part mfp-hide" id="register-popup">
+         <div class="container">
+            <div class="section-title"> <span class="section-span">Register Here</span>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <form class="quote-form contact__form-panel">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="name" id="name1" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md 12">
+                           <input type="text" name="email" id="email1" class="form-control" placeholder="Email"
+                              required>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <input type="text" name="phone" id="phone1" class="form-control"
+                              placeholder="Phone Number*" onkeypress="return isNumberKey(event)">
+                           <script>
+                              function isNumberKey(evt) {
+                              	var charCode = (evt.which) ? evt.which : event.keyCode
+                              	if (charCode > 31 && (charCode < 48 || charCode > 57))
+                              		return false;
+                              	return true;
+                              }
+                           </script>
+                        </div>
+                     </div>
+                     <div class="d-flex align-items-center">
+                        <a class="btn- open-popup-link" href="#sign-in-popup">Sign In</a>
+                        <button type="submit" id="register-btn" class="btn ml-auto">Register</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Start breadcrumbs Section -->
+      <section class="breadcrumbs-sec">
+         <img src="images/about/about-banner.jpg" class="w-100 banner-img" alt="">
+         <div class="breadcrumbs-text">
+            <h2>Blog</h2>
+            <ul>
+               <li><a href="index.html">Home</a> </li>
+               <li>Blog Details</li>
+            </ul>
+         </div>
+      </section>
+      <!-- End Breadcrumbs Section -->
+      <!-- Start Inner Content Wrapper -->
+      <section class="inner-content-wrapper blog-sec blog-details-area">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                  <div class="blog-details-desc">
+                    <div class="article-image"> <img src="images/services-img-big.jpg" alt=""> </div>
+                    <div class="article-content">
+                      <div class="entry-meta">
+                        <ul>
+                          <li><span>Posted On:</span> <a href="#">September 31, 2019</a></li>
+                          <li><span>Posted By:</span> <a href="#">John Anderson</a></li>
+                        </ul>
+                      </div>
+                      <h3>Best Job Portal in 2020</h3>
+                      <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                      <blockquote class="fa fa-quote-right">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid praesentium eveniet illum asperiores, quidem, ipsum voluptatum numquam ducimus nisi exercitationem dolorum facilis.</p>
+                      </blockquote>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                    <div class="article-footer">
+                      <div class="article-tags"> <span><i class="fa fa-share"></i></span> <a href="#">Share</a> </div>
+                      <div class="article-share">
+                        <ul class="social">
+                          <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post-navigation">
+                      <div class="navigation-links">
+                        <div class="nav-previous"> <a href="#"><i class="flaticon-left-chevron"></i> Prev Post</a> </div>
+                        <div class="nav-next"> <a href="#">Next Post <i class="flaticon-right-chevron"></i></a> </div>
+                      </div>
+                    </div>
+                    <div class="comments-area">
+                      <h3 class="comments-title">2 Comments:</h3>
+                      <ol class="comment-list">
+                        <li class="comment">
+                          <div class="comment-body">
+                            <footer class="comment-meta">
+                              <div class="comment-author vcard"> <img src="images/post-thumb-1.jpg" class="avatar" alt=""> <b class="fn">John Jones</b> <span class="says">says:</span> </div>
+                              <div class="comment-metadata"> <a href="#"> <span>April 24, 2019 at 10:59 am</span> </a> </div>
+                            </footer>
+                            <div class="comment-content">
+                              <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="reply"> <a href="#" class="comment-reply-link">Reply</a> </div>
+                          </div>
+                          <ol class="children">
+                            <li class="comment">
+                              <div class="comment-body">
+                                <footer class="comment-meta">
+                                  <div class="comment-author vcard"> <img src="images/post-thumb-2.jpg" class="avatar" alt=""> <b class="fn">Steven Smith</b> <span class="says">says:</span> </div>
+                                  <div class="comment-metadata"> <a href="#"> <span>April 24, 2019 at 10:59 am</span> </a> </div>
+                                </footer>
+                                <div class="comment-content">
+                                  <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </div>
+                                <div class="reply"> <a href="#" class="comment-reply-link">Reply</a> </div>
+                              </div>
+                            </li>
+                          </ol>
+                        </li>
+                        <li class="comment">
+                          <div class="comment-body">
+                            <footer class="comment-meta">
+                              <div class="comment-author vcard"> <img src="images/post-thumb-3.jpg" class="avatar" alt=""> <b class="fn">John Doe</b> <span class="says">says:</span> </div>
+                              <div class="comment-metadata"> <a href="#"> <span>April 24, 2019 at 10:59 am</span> </a> </div>
+                            </footer>
+                            <div class="comment-content">
+                              <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="reply"> <a href="#" class="comment-reply-link">Reply</a> </div>
+                          </div>
+                        </li>
+                      </ol>
+                      <div class="comment-respond">
+                        <h3 class="comment-reply-title">Leave a Reply</h3>
+                        <form class="comment-form">
+                          <p class="comment-notes"> <span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span> </p>
+                          <p class="comment-form-author">
+                            <label>Name <span class="required">*</span></label>
+                            <input type="text" id="author" name="author" required="">
+                          </p>
+                          <p class="comment-form-email">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required="">
+                          </p>
+                          <p class="comment-form-url">
+                            <label>Website</label>
+                            <input type="url" id="url" name="url">
+                          </p>
+                          <p class="comment-form-comment">
+                            <label>Comment</label>
+                            <textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525" required="" spellcheck="false" data-gramm="false"></textarea>
+                          </p>
+                          <p class="form-submit">
+                            <input type="submit" name="submit" id="submit" class="submit" value="Post A Comment">
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                  <aside class="widget-area" id="secondary">
+                    <div class="widget widget_search">
+                      <form class="search-form">
+                        <label> <span class="screen-reader-text">Search for:</span>
+                          <input type="search" class="search-field" placeholder="Search...">
+                        </label>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                    </div>
+                    <section class="widget widget-peru-posts-thumb">
+                      <h3 class="widget-title">Popular Posts</h3>
+                      <article class="item"> <a href="javascript:void(0);" class="thumb"> <span class="fullimage cover bg1" role="img"></span> </a>
+                        <div class="info">
+                          <time datetime="2019-06-30">June 30, 2019</time>
+                          <h4 class="title usmall"> <a href="javascript:void(0);">What is Lorem Ipsum?</a> </h4>
+                        </div>
+                        <div class="clear"></div>
+                      </article>
+                      <article class="item"> <a href="javascript:void(0);" class="thumb"> <span class="fullimage cover bg2" role="img"></span> </a>
+                        <div class="info">
+                          <time datetime="2019-06-30">June 30, 2019</time>
+                          <h4 class="title usmall"> <a href="javascript:void(0);">Why do we use it?</a> </h4>
+                        </div>
+                        <div class="clear"></div>
+                      </article>
+                      <article class="item"> <a href="javascript:void(0);" class="thumb"> <span class="fullimage cover bg3" role="img"></span> </a>
+                        <div class="info">
+                          <time datetime="2019-06-30">June 30, 2019</time>
+                          <h4 class="title usmall"> <a href="javascript:void(0);">Where does it come from?</a> </h4>
+                        </div>
+                        <div class="clear"></div>
+                      </article>
+                      <article class="item"> <a href="javascript:void(0);" class="thumb"> <span class="fullimage cover bg4" role="img"></span> </a>
+                        <div class="info">
+                          <time datetime="2019-06-30">June 30, 2019</time>
+                          <h4 class="title usmall"> <a href="javascript:void(0);">Where can I get some?</a> </h4>
+                        </div>
+                        <div class="clear"></div>
+                      </article>
+                    </section>
+                    <section class="widget widget_categories">
+                      <h3 class="widget-title">Archives</h3>
+                      <ul>
+                        <li> <a href="javascript:void(0);">May <span>2019</span></a> </li>
+                        <li> <a href="javascript:void(0);">April <span>2019</span></a> </li>
+                        <li> <a href="javascript:void(0);">June <span>2019</span></a> </li>
+                        <li> <a href="javascript:void(0);">july <span>2019</span></a> </li>
+                        <li> <a href="javascript:void(0);">August <span>2019</span></a> </li>
+                      </ul>
+                    </section>
+                    <section class="widget widget_categories">
+                      <h3 class="widget-title">Categories</h3>
+                      <ul>
+                        <li> <a href="javascript:void(0);">Career <span>(10)</span></a> </li>
+                        <li> <a href="javascript:void(0);">Employers <span>(20)</span></a> </li>
+                        <li> <a href="javascript:void(0);">Employment <span>(10)</span></a> </li>
+                        <li> <a href="javascript:void(0);">Job Agency <span>(12)</span></a> </li>
+                        <li> <a href="javascript:void(0);">Job Listing <span>(16)</span></a> </li>
+                        <li> <a href="javascript:void(0);">Job Portal <span>(17)</span></a> </li>
+                      </ul>
+                    </section>
+                    <section class="widget widget_tag_cloud">
+                      <h3 class="widget-title">Tags</h3>
+                      <div class="tagcloud"> <a href="#">Business</a> <a href="#">Consulting</a> <a href="#">Financial Support</a> <a href="#">Investment</a> <a href="#">Marketing</a> <a href="#">Seminar</a> <a href="#">Travel</a> <a href="#">Consulting</a> </div>
+                    </section>
+                  </aside>
+                </div>
+              </div>
+         </div>
+      </section>
+      <!-- Start Count Section -->
+      <section class="count-sec" id="count">
+         <div class="container-fluid">
+            <div class="row content-block">
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon1.png" alt="">
+                  <h4><i class="countdwon-number">150</i><span>Faculties</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-5 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon2.png" alt="">
+                  <h4><i class="countdwon-number">2300</i><span>Students</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-5 mb-md-0 mb-lg-0 border-right-before">
+                  <img src="images/count/count-icon3.png" alt="">
+                  <h4><i class="countdwon-number">40</i><span>Courses</span></h4>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12 mb-sm-0 mb-md-0 mb-lg-0">
+                  <img src="images/count/count-icon4.png" alt="">
+                  <h4><i class="countdwon-number">80</i><span>Countries</span></h4>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Count Section -->
+      <!-- Start Testimonial Section -->
+      <section id="testimonials" class="testimonial-sec">
+         <div class="container">
+            <h3 class="section-title text-center">Happy Candidates <br> <img src="images/title-border.png" alt=""></h3>
+            <div class="row mt-md-4">
+               <div id="testimonialcarousel" class="carousel slide testimonial-carousel text-center w-100"
+                  data-ride="carousel" data-interval="2500">
+                  <i class="quote-icon left-quote"><img src="images/quote.png" alt=""></i>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="testimonial">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dapibus tortor.
+                              Suspendisse orci ante, vestibulum at libero ac, vulputate vulputate sem. Cras quis
+                              lorem condimentum, ornare mi molestie, ipsum.
+                           </p>
+                           <!--Avatar-->
+                           <div class="avatar mx-auto mb-4">
+                              <img src="images/testimonials/testimonial-img1.png" class="rounded-circle img-fluid"
+                                 alt="">
+                           </div>
+                           <h4>Josi Welleam</h4>
+                           <h6>Founder, GitGat</h6>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonial">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et dapibus tortor.
+                              Suspendisse orci ante, vestibulum at libero ac, vulputate vulputate sem. Cras quis
+                              lorem condimentum, ornare mi molestie, ipsum..
+                           </p>
+                           <!--Avatar-->
+                           <div class="avatar mx-auto mb-4">
+                              <img src="images/testimonials/testimonial-img2.png" class="rounded-circle img-fluid"
+                                 alt="">
+                           </div>
+                           <h4>Jenny Jo</h4>
+                           <h6>Co Founder, GitGat</h6>
+                        </div>
+                     </div>
+                  </div>
+                  <i class="quote-icon right-quote"><img src="images/quote.png" alt=""></i>
+                  <a class="carousel-control-prev" href="#testimonialcarousel" role="button" data-slide="prev">
+                  <i class="fas fa-chevron-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#testimonialcarousel" role="button" data-slide="next">
+                  <i class="fas fa-chevron-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Testimonial Section -->
+      <!-- Start Footer Section -->
+      <footer class="footer-sec ">
+         <div class="container">
+            <div class="row d-flex content-block ">
+               <div class="footer-logo">
+                  <a class="nav-link " href="#home"><img src="images/footer-logo.png" alt=""></a>
+               </div>
+               <div class="ml-auto col-6 right-sec ">
+                  <div class="input-group subscribe-group">
+                     <input type="email" class="form-control" placeholder="Your Enter email" aria-label=""
+                        aria-describedby="basic-addon2">
+                     <div class="input-group-append"> <span class="input-group-text subscribe-btn" id="basic-addon2">
+                        Subscribe</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-info  d-flex  ">
+               <div class="col-md-4 col-sm-12">
+                  <h3>Need Help?</h3>
+                  <p class="phone"><i class="fas fa-phone-alt mr-2"></i> Call Us : <span>1800-0000-1234</span></p>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <h3>Email:</h3>
+                  <p><i class="fas fa-paper-plane mr-2"></i> info@test.com / support@test.com</p>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <!--social-->
+                  <div class="ml-auto social-media">
+                     <h3>Follow Us</h3>
+                     <ul class="menu-social">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-youtube"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer Section -->
+      <!-- Start Copyright Section -->
+      <div class="copyright-sec">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-center content-block d-flex">
+                  <div class="text">
+                     <p>© Copyright <span id="year"></span> JobPool. All Rights Reserved</p>
+                  </div>
+                  <div class="footer-menu">
+                     <ul>
+                        <li> <a href="home.html">Home</a>
+                        </li>
+                        <li> <a href="about-us.html">About Us</a>
+                        </li>
+                        <li> <a href="services.html">Services</a>
+                        </li>
+                        <li> <a href="current-jobs.html">Current Jobs</a>
+                        </li>
+                        <li> <a href="plans.html">Our Plans</a>
+                        </li>
+                        <li> <a href="blog.html">Blog</a>
+                        </li>
+                        <li> <a href="contact.html">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Copyright Section -->
+      <!--jquery js -->
+      <script src="js/jquery-min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <!--jquery js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!--Easing js -->
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- CounterUp JS -->
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- MagnificPopup JS -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!--jquery js -->
+      <script src="js/plugins.js"></script>
+      <!--Fontawesome js -->
+      <script src="js/fontawesome.js"></script>
+      <!--jquery js -->
+      <script src="js/custom.js"></script>
+   </body>
+
+<!-- Mirrored from sbtechnosoft.com/guidepro/single-blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:39:28 GMT -->
+</html>
+

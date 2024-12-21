@@ -1,0 +1,21 @@
+
+        .text-gray-900 {
+            color: #4954bf !important;
+            font-size: 43px;
+            font-weight: 700;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        form.user .btn-user {
+            font-size: .8rem;
+            border-radius: 1rem;
+            padding: 0.75rem 1rem;
+        }
+  
