@@ -15,7 +15,7 @@ use Carbon\Carbon;
 
 class PayPalController extends Controller
 {
-    //
+    //this is index file
     public function index(){
         return view('paypal');
     }
