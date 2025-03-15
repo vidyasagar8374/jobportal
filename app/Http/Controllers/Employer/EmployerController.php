@@ -378,9 +378,9 @@ class EmployerController extends Controller
        
         if(\Auth::user()->role === 4 || \Auth::user()->role === 5)
         {
-            $data = Employercandidate::where('Employerid', Auth::user()->belongsto)->with(['addedskills.skilldetails'])->where('isactive', 0)->get();
+            $data = Employercandidate::where('Employerid', Auth::user()->belongsto)->with(['addedskills.skilldetails'])->where('isactive', 0)->paginate(15);
         }else{
-            $data = Employercandidate::where('Employerid', Auth::user()->id)->with(['addedskills.skilldetails'])->where('isactive', 0)->get();
+            $data = Employercandidate::where('Employerid', Auth::user()->id)->with(['addedskills.skilldetails'])->where('isactive', 0)->paginate(15);
         }
         return view('Employer/addedcandidatelist', compact('data'));
     }
