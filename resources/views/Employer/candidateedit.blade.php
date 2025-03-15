@@ -375,7 +375,7 @@ function AddCandidate()
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     },
     type: 'post',
-    url : '/updatecandidate',
+    url : '{{ url('/updatecandidate') }}',
     data : {
         'id' : idinfo,
         'fname' : fname,
