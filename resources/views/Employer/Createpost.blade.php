@@ -550,7 +550,7 @@
     debugger;
     $.ajax({
       type: 'POST',
-      url: '/Createpost',
+      url: '{{ url('Createpost') }}',
       data: {
         '_token': '{{ csrf_token() }}',
         'role': role,

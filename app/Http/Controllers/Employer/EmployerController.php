@@ -420,6 +420,6 @@ class EmployerController extends Controller
         $countries = Country::get();
         $employetypes = \DB::table('employee_type')->where('is_active', 1)->get();
         $workAuthorizations = \DB::table('employer_work_authorization')->where('is_active', 1)->get();
-        return view('employer.candidateedit', compact('countries', 'employetypes', 'workAuthorizations', 'data'));
+        return view('Employer.candidateedit', compact('countries', 'employetypes', 'workAuthorizations', 'data'));
     }
 }
